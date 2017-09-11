@@ -1,5 +1,4 @@
 <?php
-
 $url = 'https://api.coursera.org/api/instructors.v1?Gtv4Xb1-EeS-ViIACwYKVQ&fields=language,photo,bio,prefixName,firstName,middleName,lastName,suffixName,fullName,title,department,website,websiteTwitter,websiteFacebook,websiteLinkedin,websiteGplus,shortName';
 //  Initiate curl
 $ch = curl_init();
@@ -30,7 +29,6 @@ $instructure = json_decode($result, true);
 <th>Profession</th>
 <th>Action</th>
 </tr>
-
 <?php 
 $j=1;
 $instructure1 =$instructure['elements'];
